@@ -9,7 +9,7 @@ module "eks" {
   node_groups = {
     default = {
       desired_capacity = var.desired_capacity
-      max_size         = 3
+      max_size         = 4
       min_size         = 1
       instance_type    = var.node_instance_type
     }
