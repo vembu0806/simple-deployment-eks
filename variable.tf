@@ -1,19 +1,19 @@
 variable "aws_region" {
-  description = "AWS region to deploy resources"
+  description = "AWS region"
   default     = "us-east-1"
 }
 
 variable "cluster_name" {
-  description = "EKS cluster name"
+  description = "EKS name"
   default     = "simple-eks-cluster"
 }
 
 variable "node_instance_type" {
-  description = "Instance type for worker nodes"
+  description = "Worker nodes Instance type"
   default     = "t3.medium"
 }
 
 variable "desired_capacity" {
-  description = "Desired capacity for worker nodes"
+  description = "Capacity of worker nodes"
   default     = 2
 }
